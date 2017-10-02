@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class RightTriangle {
-	static DecimalFormat df = new DecimalFormat("0.00"); 
+	static DecimalFormat df = new DecimalFormat("0.0000"); 
 	static Scanner input = new Scanner(System.in);
 	
 	public static void main(String[] args) {
@@ -63,7 +63,7 @@ public class RightTriangle {
 			sideA = input.nextDouble();
 			System.out.println("What is side b? >> ");
 			sideB = input.nextDouble();
-			sideC = Math.sqrt(Math.pow(sideA, 2) - Math.pow(sideB, 2));
+			sideC = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
 			df.format(sideC);
 			System.out.println("The missing side measurement is (c): " + sideC);
 			perimeterAndArea(sideA, sideB, sideC);
