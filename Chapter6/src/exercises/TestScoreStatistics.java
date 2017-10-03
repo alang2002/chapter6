@@ -13,7 +13,7 @@ public class TestScoreStatistics {
 		int total = 0;
 		final int MAX = 100;
 		final int MIN = 0;
-		int highest = 1;
+		int highest = Integer.MIN_VALUE;
 		int lowest = Integer.MAX_VALUE;
 		
 		System.out.println("Enter test score (go above 999 to quit) >> ");
@@ -33,7 +33,7 @@ public class TestScoreStatistics {
 				System.out.println("That score will not work.");
 			}
 			else {
-				System.out.println("Enter next quiz score or " + QUIT + " to quit ");
+				System.out.println("Enter next test score or " + QUIT + " to quit ");
 				testScore = input.nextInt();
 			}
 		}
